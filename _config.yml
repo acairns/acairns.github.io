@@ -1,0 +1,11 @@
+name: Andrew Cairns
+description: "I Informed You Thusly"
+url: http://acairns.co.uk
+markdown: redcarpet
+pygments: true
+paginate: 5
+paginate_path: "/page-:num"
+exclude: ['CNAME', 'bower_components', 'node_modules', 'Gruntfile.js', 'package.json', 'README.md', 'assets/css/*.less', 'bin']
+
+poole:
+    word_separator: "-"

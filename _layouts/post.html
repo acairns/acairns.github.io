@@ -1,0 +1,24 @@
+---
+layout: default
+author: Andrew Cairns
+---
+
+<header {% if page.image %}style='background-image:url({{page.image}})'{%endif%}>
+    <div class='title'>
+        <h1 class='container'>{{ page.title }}</h1>
+    </div>
+</header>
+
+<div class='container gohome'>
+    <a href='/'><span class="glyphicon glyphicon-home"></span></a>
+</div>
+
+<section class='post'>
+    <div class='container'>
+        <div class='meta'>
+            By {{page.author}} / <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+        </div>
+
+        {{ content }}
+    </div>
+</section>

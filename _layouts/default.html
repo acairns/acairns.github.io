@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <link rel="alternate" type="application/rss+xml" title="{{site.name}}" href="{{site.url}}/feed.xml">
+</head>
+<body>
+
+    <nav>
+        <div class='container'>
+            <div class='pull-right'>
+                <a href='http://twitter.com/andrewcairns'>Contact</a>
+            </div>
+            <a href='/'><img src='/assets/img/logo.png'></a>
+        </div>
+    </nav>
+    
+    {{ content }}
+
+    <footer>
+        <div class='container'>
+        Copyright &copy; {{ site.time | date: '%Y' }} Andrew Cairns. All rights reserved.<br>
+        Proudly powered by GitHub &amp; Jekyll
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/all.min.js"></script>
+
+</body>
+</html>
