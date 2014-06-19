@@ -8,6 +8,9 @@ categories:
   - Tips
 ---
 
+<div class="alert alert-warning">
+    <strong>Warning!</strong> This article is outdated. An updated article about <a title='Laravel 4 Headers' href='/2014/06/updated-cors-routes-with-laravel'>Laravel headers</a> may be what you are looking for.
+</div>
 
 
 I've been trying to keep up with the latest Laravel developments. The syntax is just beautiful and it's use of design patters is just Object-Orientated porn. The main turn-on for me with Laravel is the IoC container and how testable components are. This sits well with my TDD nature and I haven't even mentioned it's use of Composer to leverage the PHP community.
