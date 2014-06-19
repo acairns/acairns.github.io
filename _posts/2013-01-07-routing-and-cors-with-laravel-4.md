@@ -7,6 +7,9 @@ categories:
   - Development
   - Tips
 ---
+
+
+
 I've been trying to keep up with the latest Laravel developments. The syntax is just beautiful and it's use of design patters is just Object-Orientated porn. The main turn-on for me with Laravel is the IoC container and how testable components are. This sits well with my TDD nature and I haven't even mentioned it's use of Composer to leverage the PHP community.
 
 So, a few months ago I started a little app. Nothing fancy, but it was in Laravel 3. I've decided to rewrite it in Laravel 4 so I can get some experience before it's officially released. The app has a widget that will be used on remote sites. It will request some javascript from a remote server which may also make an API call.
@@ -18,8 +21,7 @@ First, I had some problems with routes. I wanted to pass a URI segment as a para
 Here's what I was doing wrong. The old documentation has the following <a title="Laravel 3 Wildcards" href="http://laravel.com/docs/routing#wildcards" target="_blank">example for wildcards</a>:
 
 {% highlight php %}
-Route::get('user/(:num)', function($id)
-{
+Route::get('user/(:num)', function ($id) {
     //
 });
 {% endhighlight %}
@@ -27,8 +29,7 @@ Route::get('user/(:num)', function($id)
 In Laravel 4 there are some really nice new routing features along with a few minor tweaks to the wildcards. The *(:num)* wildcard is now represented as *{num}*. Here's the same example again, but fixed to work with L4:
 
 {% highlight php %}
-Route::get('user/{num}', function($id)
-{
+Route::get('user/{num}', function ($id) {
     //
 });
 {% endhighlight %}
@@ -41,8 +42,7 @@ I've never handled CORS with any version of Laravel. The old app I was moving ov
 
 I started pasting the usual header in places I thought it should go. Here's an interesting one that didn't work:
 
-{% highlight php %}Route::get('user', function()
-{
+{% highlight php %}Route::get('user', function () {
     header('Access-Control-Allow-Origin: *');
     return 'Heya';
 });
@@ -51,8 +51,7 @@ I started pasting the usual header in places I thought it should go. Here's an i
 That's interesting right? I examined the response from this and the Access-Control-Allow-Origin header wasn't set! Guess what did work however:
 
 {% highlight php %}header('Access-Control-Allow-Origin: *');
-Route::get('user', function()
-{
+Route::get('user', function () {
     return 'Heya';
 });
 {% endhighlight %}
@@ -74,8 +73,7 @@ Now, in my case, I'm going to be using a Controller. So how do we set this heade
 {% highlight php %}
 public function __construct()
 {
-    $this->afterFilter(function($response)
-    {
+    $this->afterFilter(function ($response) {
         $response->headers->set('Access-Control-Allow-Origin', '*');
         return $response;
     });
