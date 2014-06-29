@@ -1,11 +1,12 @@
-name: Andrew Cairns
-description: "I Informed You Thusly"
-url: http://acairns.co.uk
-markdown: redcarpet
-highlighter: 'pygments'
-paginate: 5
-paginate_path: "/page-:num"
-exclude: ['CNAME', 'bower_components', 'node_modules', 'Gruntfile.js', 'package.json', 'README.md', 'assets/css/*.less', 'bin']
+title:            Andrew Cairns
+tagline:          'Software Developer'
+description:      "I Informed You Thusly"
+baseurl:          /
+markdown:         redcarpet
+highlighter:      pygments
+permalink:        pretty
+paginate:         5
+paginate_path:    "/page-:num"
 
 poole:
     word_separator: "-"

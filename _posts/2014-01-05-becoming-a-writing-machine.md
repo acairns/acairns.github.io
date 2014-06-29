@@ -3,7 +3,6 @@ title: Becoming a Writing Machine
 author: Andrew
 layout: post
 permalink: /2014/01/becoming-a-writing-machine/
-image: /assets/img/posts/becoming-a-writing-machine.jpg
 ---
 
 Last year was full of awesome and I've got a lot to be thankful for. As the new working year is about to commence, I've taken a little time to reflect and consider what goals I want to achieve in 2014.

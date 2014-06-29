@@ -1,98 +1,37 @@
 ---
 layout: default
-title: I Informed You Thusly
+title: Home
 ---
 
-{% if paginator.page == 1 %}<header class='tall'>{% else %}<header>{% endif %}
-    <div class='title'>
-        <h1>
-            Follow<br>
-            Your<br>
-            Dreams<br>
-            <em>- Laura Cairns, my wife</em>
-        </h1>
-    </div>
-    {% if paginator.page == 1 %}
-        <div class='scroll'>
-            <span class="glyphicon glyphicon-chevron-down"></span>
-        </div>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
     {% endif %}
-</header>
-
-<!--
-{% if paginator.page == 1 %}
-<section id="work">
-    <div class='container'>
-        <h1>Work</h1>
-        
-        <div class='row'>
-            <div class='col-sm-6 align-right'>
-                <h2>CDN.net</h2>
-                <p>Preparing to change the way the world perceives content delivery networks. CDN.net are passionate about the power of federated networks, and working together as a cooperative to benefit everyone.</p>
-            </div>
-            <div class='col-sm-6'>
-                <img src='/assets/img/portfolio/cdn.png'>
-            </div>
-        </div>
-
-        <div class='row'>
-            <div class='col-sm-6'>
-                <img src='/assets/img/portfolio/chris-fraser.png'>
-            </div>
-            <div class='col-sm-6'>
-                <h2>Chris Fraser</h2>
-                <p>Dr Chris Fraser is a Consultanting Gastroenterologist at The Wolfson Unit for Endoscopy, St Mark's Hospital Harrow and also an Honorary Senior Lecturer at Imperial College School of Medicine, London.</p>
-            </div>
-        </div>
-    </div>
-</section>
-{% endif %}
--->
-
-<section id="posts">
-    <div class='container'>
-        <h1>Posts</h1>
-    
-        {% for post in paginator.posts %}
-            <article>
-                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-                <p>{{ post.excerpt }}</p>
-            </article>
-        {% endfor %}
-    </div>
-</section>
-
-{% if paginator.total_pages > 1 %}
-
-    <div class='container'>
-
-        <ul class="pagination">
-
-            {% if paginator.previous_page %}
-                {% if paginator.previous_page == 1 %}
-                    <li><a href="/">&laquo;</a></li>
-                {% else %}
-                    <li><a href="/page-{{ paginator.previous_page }}">&laquo;</a></li>
-                {% endif %}
-            {% endif %}
-
-            {% for i in (1..paginator.total_pages) %}
-                <li{% if i == paginator.page %} class='active'{% endif %}>
-                    {% if i == 1 %}
-                        <a href='/'>{{i}}</a>
-                    {% else %}
-                        <a href='/page-{{i}}'>{{i}}</a>
-                    {% endif %}
-                </li>
-            {% endfor %}
-
-            {% if paginator.next_page %}
-                <li><a href="/page-{{ paginator.next_page }}">&raquo;</a></li>
-            {% endif %}
-
-        </ul>
-
-    </div>
-
-{% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>

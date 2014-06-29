@@ -1,24 +1,18 @@
 ---
 layout: default
-author: Andrew Cairns
 ---
 
-<header {% if page.image %}style='background-image:url({{page.image}})'{%endif%}>
-    <div class='title'>
-        <h1 class='container'>{{ page.title }}</h1>
-    </div>
-</header>
-
-<div class='container gohome'>
-    <a href='/'><span class="glyphicon glyphicon-home"></span></a>
+<div class="post">
+    <h1 class="post-title">{{page.title}}</h1>
+    <span class="post-date">{{page.date | date_to_string}}</span>
+    {{content}}
 </div>
 
-<section class='post'>
-    <div class='container'>
-        <div class='meta'>
-            By {{page.author}} / <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
-        </div>
-
-        {{ content }}
-    </div>
-</section>
+<div class="related">
+    <h2>Related Posts</h2>
+    <ul class="related-posts">
+        {% for post in site.related_posts limit:3 %}
+        <li><h3><a href="{{post.url}}">{{post.title}}<small>{{post.date | date_to_string}}</small></a></h3></li>
+        {% endfor %}
+    </ul>
+</div>
