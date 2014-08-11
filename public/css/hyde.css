@@ -97,6 +97,13 @@ a.sidebar-nav-item:focus {
 .sidebar-nav-item.active {
   font-weight: bold;
 }
+.sidebar-social {
+  margin-bottom: 1rem;
+  text-align: center;
+  border-top: solid 3px #333;
+  border-bottom: solid 3px #333;
+  padding: 1rem;
+}
 
 /* Sticky sidebar
  *
