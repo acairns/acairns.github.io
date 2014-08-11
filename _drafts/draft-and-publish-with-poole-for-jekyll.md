@@ -1,9 +1,12 @@
 ---
-title: Scripts for drafts with Jekyll
+title: Draft and Publish with poole for Jekyll
 author: Andrew
 layout: post
 permalink: /2014/02/scripts-for-drafts-with-jekyll/
+date: 2014-02-01
 ---
+
+*** mention something here about "poole" being confusing because of http://getpoole.com/ ***
 
 I'm still relatively new to Jekyll - I've been aware of it for quite a long time but never, until a few months ago, had the chance to play with it.
 
