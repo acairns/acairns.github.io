@@ -1,11 +1,13 @@
 ---
-title: Introduction to Sergeant - The PHP Command Dispatcher
+title: Introduction to Sergeant - A PHP Command Dispatcher
 layout: post
-date: 2014-08-11
-categories:
-  - Development
+date: 2014-08-11 13:09
+
 tags:
   - sergeant
+  - composer
+  - package
+  - packagist
 ---
 
 [Sergeant](https://github.com/acairns/sergeant) provides a way to extract business logic into commands which can be run
