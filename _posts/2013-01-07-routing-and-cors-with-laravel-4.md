@@ -3,6 +3,7 @@ title: Routing and CORS with Laravel 4
 author: Andrew
 layout: post
 permalink: /2013/01/routing-and-cors-with-laravel-4/
+date: 2013-01-07
 categories:
   - Development
   - Tips

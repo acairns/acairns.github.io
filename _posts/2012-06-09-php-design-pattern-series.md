@@ -4,6 +4,7 @@ author: Andrew
 excerpt: "Working on a series of articles related to Design Patterns in PHP. I'll be starting with the Adapter Pattern."
 layout: post
 permalink: /2012/06/php-design-pattern-series/
+date: 2012-06-09
 categories:
   - Development
 ---

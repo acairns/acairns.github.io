@@ -3,6 +3,7 @@ title: 'Paymill: Stripe clone expands into Europe!'
 author: Andrew
 layout: post
 permalink: /2012/11/paymill-stripe-clone-expands-into-europe/
+date: 2012-11-11
 categories:
   - Development
   - Reviews

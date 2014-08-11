@@ -3,6 +3,7 @@ title: 'Testing Multiple URL&#8217;s Concurrently with Apache Bench'
 author: Andrew
 layout: post
 permalink: /2012/08/multiple-urls-concurrently-with-apache-bench/
+date: 2012-08-18
 categories:
   - Tips
 tags:

@@ -4,6 +4,7 @@ author: Andrew
 excerpt: Editing the MOTD on your server can help you remember where you are in large n-tier architectures.
 layout: post
 permalink: /2012/07/editing-your-motd/
+date: 2012-07-23
 categories:
   - Tips
 ---

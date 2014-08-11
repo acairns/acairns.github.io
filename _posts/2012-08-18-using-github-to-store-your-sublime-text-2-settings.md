@@ -3,6 +3,7 @@ title: Using GitHub to store your Sublime Text 2 settings
 author: Andrew
 layout: post
 permalink: /2012/08/using-github-to-store-your-sublime-text-2-settings/
+date: 2012-08-18
 categories:
   - Tips
 tags:

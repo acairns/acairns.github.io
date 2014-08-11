@@ -3,6 +3,7 @@ title: When does foreach copy in PHP?
 author: Andrew
 layout: post
 permalink: /2012/08/when-does-foreach-copy-in-php/
+date: 2012-08-18
 categories:
   - Development
 tags:

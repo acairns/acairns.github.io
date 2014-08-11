@@ -3,6 +3,7 @@ title: Quickly re-run previous command as sudo
 author: Andrew
 layout: post
 permalink: /2013/01/quickly-re-run-previous-command-as-sudo/
+date: 2013-01-13
 categories:
   - Tips
 ---

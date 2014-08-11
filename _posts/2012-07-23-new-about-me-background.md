@@ -4,6 +4,7 @@ author: Andrew
 excerpt: "I've finally updated my about.me profile."
 layout: post
 permalink: /2012/07/new-about-me-background/
+date: 2012-07-23
 categories:
   - Uncategorized
 ---

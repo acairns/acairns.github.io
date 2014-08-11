@@ -3,6 +3,7 @@ title: Updated Cross-Origin Resource Sharing with Laravel
 author: Andrew
 layout: post
 permalink: /2014/06/updated-cors-routes-with-laravel/
+date: 2014-06-19
 categories:
   - Development
   - Laravel

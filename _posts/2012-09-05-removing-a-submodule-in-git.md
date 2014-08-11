@@ -3,6 +3,7 @@ title: Removing a Submodule in Git
 author: Andrew
 layout: post
 permalink: /2012/09/removing-a-submodule-in-git/
+date: 2012-09-05
 categories:
   - Tips
 ---

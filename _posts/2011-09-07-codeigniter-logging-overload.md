@@ -3,6 +3,7 @@ title: CodeIgniter Logging-Overload
 author: Andrew
 layout: post
 permalink: /2011/09/codeigniter-logging-overload/
+date: 2011-09-07
 categories:
   - Development
 ---

@@ -3,6 +3,7 @@ title: Building a Vagrant base box with Bento
 author: Andrew
 layout: post
 permalink: /2014/01/building-a-vagrant-base-box-with-bento/
+date: 2014-01-12
 ---
 
 Vagrant is a tool which allows you to create a lightweight and portable development environment. Using virtual machines, a development team can build software using a consistent environment independent of their OS of choice. What's great about running a virtual machine locally is that you can match your production environment to prevent any "it works locally" issues.

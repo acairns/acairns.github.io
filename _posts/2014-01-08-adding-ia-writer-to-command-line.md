@@ -3,6 +3,7 @@ title: Adding iA Writer to command line
 author: Andrew
 layout: post
 permalink: /2014/01/adding-ia-writer-to-command-line/
+date: 2014-01-08
 ---
 
 

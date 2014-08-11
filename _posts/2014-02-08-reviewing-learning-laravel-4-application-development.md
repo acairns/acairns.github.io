@@ -3,6 +3,7 @@ title: Reviewing Learning Laravel 4 Application Development
 author: Andrew
 layout: post
 permalink: /2014/01/becoming-a-writing-machine/
+date: 2014-02-08
 ---
 
 Early in the new year [Packt Publishing](http://www.packtpub.com/) got in touch and asked if I could write a review on Hardik Dangar's [Learning Laravel 4 Application Development](http://bit.ly/1gb8XNK). I was excited, I'm a huge fan of Laravel 4 and use it fairly regularly. I looked at this as an opportunity to delve deeper and couldn't wait to get started.

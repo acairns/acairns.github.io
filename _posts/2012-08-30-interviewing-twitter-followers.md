@@ -3,6 +3,7 @@ title: Interviewing Twitter Followers
 author: Andrew
 layout: post
 permalink: /2012/08/interviewing-twitter-followers/
+date: 2012-08-30
 categories:
   - Uncategorized
 ---

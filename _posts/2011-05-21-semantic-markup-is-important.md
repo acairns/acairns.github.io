@@ -3,6 +3,7 @@ title: Semantic Markup is Important
 author: Andrew
 layout: post
 permalink: /2011/05/semantic-markup-is-important/
+date: 2011-05-21
 categories:
   - Uncategorized
 tags:

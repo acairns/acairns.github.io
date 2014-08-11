@@ -3,6 +3,7 @@ title: The List of Possible Titles
 author: Andrew
 layout: post
 permalink: /2014/01/the-list-of-possible-titles/
+date: 2014-01-07
 ---
 
 Recently I [wrote a post](/2014/01/becoming-a-writing-machine/) about joining a plan on [Lift](http://lift.do) to [Become a Writing Machine](https://lift.do/plans/242/become-a-writing-machine). The first step was to identify my target audience. The next step is to identify some topic titles for articles I would like to write about. In the coming weeks, I'll be using this as a quick reference to keep the juices flowing.

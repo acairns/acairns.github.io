@@ -3,6 +3,7 @@ title: Truncating MySQL tables with foreign key restraints
 author: Andrew
 layout: post
 permalink: /2014/01/truncating-mysql-tables-with-foreign-key-restraints/
+date: 2014-01-20
 ---
 
 When building software, it's best practice to write migrations so you can quickly update, set-up and tear-down your database. Sometimes though, you want to quickly clear down a single table without loosing the rest of your data without worrying about referential integrity.

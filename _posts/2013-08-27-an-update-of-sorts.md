@@ -3,6 +3,7 @@ title: An update of sorts
 author: Andrew
 layout: post
 permalink: /2013/08/an-update-of-sorts/
+date: 2013-08-27
 categories:
   - Uncategorized
 ---

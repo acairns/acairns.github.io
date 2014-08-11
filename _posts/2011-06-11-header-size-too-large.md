@@ -3,6 +3,7 @@ title: "Error: Header size too large. Phil Sturgeon's cURL Library"
 author: Andrew
 layout: post
 permalink: /2011/06/header-size-too-large/
+date: 2011-06-11
 categories:
   - Development
 tags:

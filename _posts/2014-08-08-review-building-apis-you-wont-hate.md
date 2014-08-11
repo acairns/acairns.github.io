@@ -3,6 +3,7 @@ title: Review - Building APIs you wont hate
 author: Andrew
 layout: post
 permalink: /2014/08/review-building-apis-you-wont-hate/
+date: 2014-08-08
 ---
 
 <a href="https://leanpub.com/build-apis-you-wont-hate" target="_blank"><img src="/public/img/review-build-apis-you-wont-hate.png" style="float: right; margin-left: 30px; max-width: 40%"></a>

@@ -3,6 +3,7 @@ title: Autoloading Resources in Codeigniter
 author: Andrew
 layout: post
 permalink: /2011/05/autoloading-resources-in-codeigniter/
+date: 2011-05-02
 categories:
   - Development
 tags:

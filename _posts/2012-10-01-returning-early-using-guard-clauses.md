@@ -3,6 +3,7 @@ title: Returning Early using Guard Clauses
 author: Andrew
 layout: post
 permalink: /2012/10/returning-early-using-guard-clauses/
+date: 2012-10-01
 categories:
   - Development
 ---

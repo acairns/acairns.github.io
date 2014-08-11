@@ -3,6 +3,7 @@ title: Accessing CodeIgniter Resources from Library Items
 author: Andrew
 layout: post
 permalink: /2011/08/accessing-codeigniter-resources/
+date: 2011-08-11
 categories:
   - Development
 tags:
