@@ -7,6 +7,7 @@ date: 2014-06-19
 categories:
   - Development
   - Laravel
+excerpt: A while ago I wrote a post about Cross-Origin Resource Sharing in Laravel 4. At the time of writing, Laravel 4 was still in beta and now, 18 months later, the landscape looks a little different.
 ---
 
 A while ago I wrote a post about Cross-Origin Resource Sharing in Laravel 4.

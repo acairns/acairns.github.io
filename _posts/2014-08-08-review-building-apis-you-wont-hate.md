@@ -4,6 +4,7 @@ author: Andrew
 layout: post
 permalink: /2014/08/review-building-apis-you-wont-hate/
 date: 2014-08-08
+excerpt: Thinking of building an API? Well don't, because <a href="twitter.com/philsturgeon" target="_blank">@philsturgeon</a> has done all the thinking for you! Quite a while ago I was asked to give a review of <a href="https://leanpub.com/build-apis-you-wont-hate" target="_blank">Build API's you won't hate</a> which I jumped at since it's my favourite area of software development. Granted, it's taken me a while to get around to writing the review - but here it is!
 ---
 
 <a href="https://leanpub.com/build-apis-you-wont-hate" target="_blank"><img src="/public/img/review-build-apis-you-wont-hate.png" style="float: right; margin-left: 30px; max-width: 40%"></a>
