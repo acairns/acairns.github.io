@@ -6,6 +6,9 @@ markdown:         redcarpet
 highlighter:      pygments
 permalink:        pretty
 paginate:         5
+exclude: [
+    'public/less'
+]
 
 poole:
     word_separator: "-"
