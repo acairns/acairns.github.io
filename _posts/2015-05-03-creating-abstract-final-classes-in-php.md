@@ -36,14 +36,14 @@ namespace Acme\Settings;
 
 final class Defaults
 {
+    const PROJECT_NAME = 'Acme';
+
+    const PAGE_COUNT = 3;
+
     private function __construct()
     {
 
     }
-    
-    const PROJECT_NAME = 'Acme';
-
-    const PAGE_COUNT = 3;
 }
 ```
 
