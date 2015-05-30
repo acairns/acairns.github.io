@@ -1,7 +1,7 @@
 ---
 title: Don't create FQCN Strings
 layout: post
-date: 2015-02-21
+date: 2015-05-30
 ---
 
 Sometimes your code needs to reference a class by it's name as a string. You may be asking a Factory to create an instance of the class, or perhaps you are configuring an IoC container.
