@@ -4,19 +4,18 @@ layout: post
 date: 2015-03-28
 ---
 
-Recently I proposed that support for `PUT`, the verb used to indecate a request should update (and sometimes create) a resource, be removed from an API. Needless to say, this suggesting was met with a great deal of uncertainty and was followed by lengthy discussions on the definition of REST.
+During a recent API design discussion, I proposed that `PUT` support be dropped in favour of `POST`. Needless to say, suggesting the team retire the verb responsible for updating (and sometimes creating) a resource from their public interface was met with a great deal of uncertainty and lengthy discussions on the definition and intentions of _HTTP_ and _REST_ followed.
 
-Recommending an alternative way to update resources was not because I feel `PUT` is flawed, nor do I feel there is a problem with _REST_.
-In fact, I feel the opposite - avoiding `PUT` can be more restful in some contexts.
+To explain the recommendation, some context is required. I am not advocating that `PUT` be abandoned from all API's - nor do I feel there is a findamental flaw with _REST_. However, I do believe that manipulating state with `POST` over `PUT` is more _RESTful_ in some situations.
 
-Let's take a look at a simple example where `PUT` can be used to update a persons name.
+Let's take a look at a simple example where `PUT` is used to update the name of a player.
 
-## Simple Example of PUT
+## Simple PUT example
 
-First, we'll need to have a look at what we'll be updating - let's make a `GET` for our resource:
+First, we'll need to take a look at the resource we want to update - let's `GET` our resource:
 
 ``` bash
-GET /footballers/1337
+GET /players/1337
 ```
 
 Response:
@@ -31,95 +30,56 @@ Awesome, but Frank isn't his real first name, it's Franciscus... let's use `PUT`
 
 
 ``` bash
-PUT: /footballers/1337
+PUT: /players/1337
 {
     name: "Franciscus de Boer"
 }
 ```
 
-Is it obvious what this request is asking?
-
-Well, a `PUT` request is being made to the `/footballers/1337` resource with a value for the _name_ property.
-
-I'm pretty sure we can assume we need to rename the player. Let's store the new name and go home?
+It's quite obvious what this request is doing. The `PUT` request being made to the `/players/1337` resource has an updated version of the player - containing the new _name_ property.
 
 
-## The Problem
+## Problems
 
-An _API_ is more than a low-level abstraction of your database.
-Resources are not a collection of proprties and values that expose a database structure.
+Simple applications may require nothing more than CRUD operations. In our example, we are issuing a basic _update_ request using the `PUT` verb. Using `PUT` implies atomic consistency. After our `PUT` request is completed, the resource state is expected to have been updated and subsequent `GET` requests should contain the changes.
 
-What if we stored _footballers_ like this?
+But what if our application was more than CRUD? Perhaps renaming a player has a complicated workflow and changes must be manually checked by a moderator.
 
-``` js
-{
-    id: 1337,
-    first_name: "Frank",
-    middle_name: "",
-    last_name: "de Boer"
-}
-```
+What if the _name_ field was created for convienence from a read projection? Perhaps the schema for a player actually stores the name as a series of fields such as: `firstname`, `middlename` and `lastname`. Afterall, an API is more than a low-level database abstraction.
 
-How would we satisfy a `PUT` request with a _name_ field in this scenario?
-Maybe we need to make a different request with more specific information?
+And what if renaming a player was an intensive operation? It's also possible that updating the name of a player could require communication with other APIs. The operation could get queued to be completed later by a dedicated worker.
 
-And what if updating a footballer's name was also an intensive operation?
-Perhaps it involved communicating with other APIs and was queued to be completed by worker servers?
-Is using `PUT` still an appropriate method to update the name?
-
-An _API_ is also more than a collection of resources - it's an interface to your application.
-Simple CRUD applications don't need to about complex behaviour spanning multiple resources.
-However for more complex applications, this is a very real concern and a method is required to apply these business rules ubiquitously across all accessable ports.
+Is `PUT` still an appropriate method for changing state in these scenarios?
 
 
 ## POST Intention
 
-Using `PUT` implies an atomic operation is being requested by the API consumer.
-It is not clear if the request was queued and if the state of the resource has been updated.
+If an app has scaled and embraced _Eventual Consistency_, uses a _CQRS_ architecture with multiple read projections - and possibly event sourced, an alternative to `PUT` is needed to allow manipulating state.
 
-Complex applications involving more than just CRUD operations may employ techniques requiring them to embrace _Eventual Consistency_.
-This is often the case with systems that are _Event Sourced_, using _CQRS_ with _Read Projections_ or just some basic queueing system.
-
-Instead of direct mutation of a resource, we can `POST` commands which describe the required behaviour:
+To reduce the expectency of atomic consistency, we can design our API interface to accept `POST`ing of intention - instead of direct mutation of a resource:
 
 ``` bash
-POST: /footballers/1337/rename
+POST: /players/1337/rename
 {
-    first_name: "Franciscus"
+    first_name: "Franciscus",
+    last_name: "de Boer"
 }
 ```
 
-Is it obvious what this request is asking?
+By dropping `PUT` in favour of `POST`, we can finally break free from the confines of CRUD. Clients integrating with our system now need to know less about the sequence of events which make up a particular behavior. We are now free to change a particular feature entirely - as long as we maintain a consistent interface.
 
-Well, a `POST` request is being made to the `/footballers/1337/rename`, so it's clear we are renaming the player.
-Our job allows us to post up individual fields, so we're able to only change the first name of the player.
+Our interface now has separate endpoints for Commands and Queries allowing us to better support a CQRS architecture. If we wish to _Query_ the current state of a resource, we can make a `GET` request. If we wish to issue a _Command_, we can `POST` to a different endpoint. Our Commands and Queries are separate.
 
-Depending upon the response code, we will be able to tell if this request was atomic, or was queued.
-
-
-## Todo...
-
-Decent start so far - wording needs tweaked.
-
-I'm also not crazy about the example.
-I don't want to convey this is over-engineering because the resource doesn't match the database schema.
+It is also clearer the operation may not be atomic. Clients of the API know they may need to wait for changes to propogate throughout the system.
 
 
+## The mother of invention
 
+Designing state change using `POST` will not work for every API. If this sounds like a bad idea for your app, then you probably don't need it.
 
+Exposing nouns as endpoints encapsulate behavior with
 
-
-
-
-
-
-
-
-
-
-
-
-
+commands only become beneficial if your system has the need. As stated before, a CQRS architecture is probably the most likely beneficiary of this interface - however any API that needs to design an endpoint with _eventual consistency_ could consider this appraoch.
 
 
 
