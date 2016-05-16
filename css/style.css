@@ -114,15 +114,15 @@ body {
             height: 24px;
         }
             .twitter {
-                background-image: url(../img/twitter.png);
+                background-image: url(../img/social/twitter.png);
                 background-size: 24px 24px;
             }
             .dribbble {
-                background-image: url(../img/dribbble.png);
+                background-image: url(../img/social/dribbble.png);
                 background-size: 24px 24px;
             }
             .github {
-                background-image: url(../img/github.png);
+                background-image: url(../img/social/github.png);
                 background-size: 24px 24px;
             }
 
