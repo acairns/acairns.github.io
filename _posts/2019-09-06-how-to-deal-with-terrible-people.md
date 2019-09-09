@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "How to Deal with Terrible People"
+title:  "How to deal with terrible people"
 excerpt_separator: <!--more-->
 ---
 
