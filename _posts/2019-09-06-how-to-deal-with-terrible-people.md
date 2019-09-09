@@ -22,7 +22,7 @@ But not today. This particular ass hole had chosen the perfect moment to make hi
 
 It was no accident I was reading this particular passage. The evening before, I watched [Ryan Holiday talk about How Stoics deal with A** Holes](https://youtu.be/E1h1V_o_gL8), which prompted me to pack my copy of Meditations to read on the journey.
 
-In my situation, reality didn't match expectation. I am mindful of others when I'm walking and expect other people to be the same. But reality doesn't always match expectations. The perfect antidote is to be aware that ass holes exist. Because they exist, it's possible we'll encounter one from time to time. It's illogical to believe otherwise. Encountering an ass hole was always a possibility, therefore, why should we be angry when it happens?
+In my situation, reality didn't match expectation. I am mindful of others when I'm walking and expect other people to do the same. But reality doesn't always match expectations. The perfect antidote is to be aware that ass holes exist. Because they exist, it's possible we'll encounter one from time to time. It's illogical to believe otherwise. Encountering an ass hole was always a possibility, therefore, why should we be angry when it happens?
 
 Because I was fortunate to have the perfect context on my mind at the very moment the situation arose, it was easy for me to choose the way I reacted. I actually found it amusing. Hopefully in the future I'll be writing a follow-up post about discovering another ass hole, because - it's going to happen eventually, and how I remembered the teachings of Stoic philosophy and how I simply went on about my day.
 
