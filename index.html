@@ -1,39 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Andrew Cairns</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+---
+# this is an empty front matter
+layout: default
+---
 
-        <!--[if lt IE 9]>
-            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-    </head>
 
-    <body>
-        <div class="avatar">
-            <img src="img/me.jpg" alt="Avatar">
-        </div>
+{% for post in site.posts %}
+<article class="post">
+    {% include post_header.html post=post %}
 
-        <div class="content">
-            <h1 class="title">Andrew<br>Cairns</h1>
+    <div class="post-body">
+        {{ post.excerpt }}
 
-            <p>Passionate about TDD, DDD, CQRS, REST, Hexagonal Architecture and Agile Methodologies.</p>
-
-            <ul class="social-icons">
-                <li><a class="github" href="https://github.com/acairns" title="Github">Github</a></li>
-                <li><a class="twitter" href="https://twitter.com/andrewcairns" title="Twitter">Twitter</a></li>
-                <li><a class="dribbble" href="https://dribbble.com/andrewcairns" title="Dribbble">Dribbble</a></li>
-                <li><a class="linkedin" href="https://www.linkedin.com/in/andrewcairns" title="LinkedIn">LinkedIn</a></li>
-            </ul>
-
-            <p>
-                Technical Lead at <a href="https://gathercontent.com/">GatherContent</a><br>
-                Author at <a href="http://www.sitepoint.com/author/acairns/">SitePoint</a>
-            </p>
-
-            <p>Want to send me a love letter? <a href="mailto:andrew@acairns.co.uk">Email me</a>.</p>
-        </div>
-    </body>
-</html>
+        <p></p>
+        <p><a href="{{ post.url }}">Continue reading →</a></p>
+    </div>
+</article>
+{% endfor %}
