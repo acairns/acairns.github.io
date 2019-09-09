@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 
 During the trip to work, I encountered a person which can only be described as an ass hole. After alighting from the train and passing ticket inspection, I was intentionally shoved into people walking in the opposite direction, and into the metal rail.
 
-How did I react? I laughed.
+How did I react? I laughed. 
 
 <!--more-->
 
