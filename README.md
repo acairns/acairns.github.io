@@ -2,8 +2,12 @@
 
 Makes use of Jekyll to be used on GitHub Pages.
 
-Site can be built and served by Jekyll locally by:
+Get started by booting up Docker:
+```
+$ docker-compose up
+```
 
-```bash
-$ bundle exec jekyll serve --watch
+This will automatically run:
+```
+$ jekyll serve --watch
 ```
