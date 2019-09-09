@@ -26,7 +26,7 @@ In my situation, reality didn't match expectation. I am mindful of others when I
 
 Because I was fortunate to have the perfect context on my mind at the very moment the situation arose, it was easy for me to choose the way I reacted. I actually found it amusing. Hopefully in the future I'll be writing a follow-up post about discovering another ass hole, because - it's going to happen eventually, and how I remembered the teachings of Stoic philosophy and how I simply went on about my day.
 
-Or perhaps I'll write about how I pushed them down the stairs. You know, because other people need to encounter ass holes too, from time to time.
+Or perhaps I'll write about how I pushed them down the stairs. You know, because ass holes need to encounter other ass holes too, from time to time.
 
 
 <div class="post-metadata">
