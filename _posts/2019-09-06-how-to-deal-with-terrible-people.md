@@ -30,5 +30,5 @@ Or perhaps I'll write about how I pushed them down the stairs. You know, because
 
 
 <div class="post-metadata">
-    <time class="post-timestamp">Published on September 9, 2019</time>
+    <time class="post-timestamp">Published on September 6, 2019</time>
 </div>
