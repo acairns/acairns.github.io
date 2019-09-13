@@ -12,7 +12,7 @@ How did I react? I laughed.
 
 This wouldn't be my usual reaction. I'd typically get angry, storm after them, and hope an opportunity arose where I could return the favour. But it wouldn't, and some form of negative internal dialog would likely surface and ruin more of my day than I'd care to admit.
 
-But not today. This particular ass hole had chosen the perfect moment to make himself known to me as I was literally thinking about, in that particular moment, how Stoics deal with shameless people. It's no secret that I'm fascinated by Stoic philosophy. During my commute I was reading Marcus Aurelius's Meditations in which he stated:
+But not today. This particular ass hole had chosen the perfect moment to make himself known to me as I was literally thinking about, in that particular moment, how Stoics deal with shameless people. It's no secret that I'm a keen student of Stoic philosophy. During my commute I was reading Marcus Aurelius's Meditations in which he stated:
 
 > “When you run up against someone else’s shamelessness, ask yourself this: Is a world without shamelessness possible?
 > 
