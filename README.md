@@ -7,7 +7,9 @@ Get started by booting up Docker:
 $ docker-compose up
 ```
 
-This will automatically run:
+Note: this is the entrypoint of the container and will automatically run:
 ```
 $ jekyll serve --watch
 ```
+
+The site is a github site - just push up the changes
